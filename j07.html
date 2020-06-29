@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>j07</title>
+		<font color="orange" face="comic sans ms">
+		<script>
+			var txt = "tiger lion";
+			var len = txt.length;
+			alert("len: " + len);
+
+			
+		function f1(){
+			var str= "안녕하세요? 언제나 햇살처럼 건강하세요~";
+			/*
+			var pos1 = str.indexOf("처럼");
+			alert ("pos1 : " + pos1);
+
+			var r1= str.slice(10, 10+3);
+			alert("r1: " + r1);
+			var r2= str.substring(10, 10+3);
+			alert("r2: " + r2);
+			var r3= str.substr(10, 10+3);
+			alert("r3: " + r3);
+			var r4= str.substr(10);
+			alert("r4: " + r4);
+			var r5= str.substr(-5);
+			alert("r5: " + r5);
+			var r6 = replaceAll(str, "처럼", "같이");
+			alert("r6: " + r6);
+			function replaceAll(str, word1, word2){
+				return str.split(word1).join(word2);
+			}
+			*/
+			var target = " Hello Mr ";
+			var r7 = target.toLowerCase();
+			alert("r7: " + r7);
+			var r8 = target.toUpperCase();
+			alert("r8: " + r8);
+			var r9 = target.trim();
+			alert("r9: " + r9.length);
+			var r10 = str.charAt(0);
+			alert("r10: " + r10);
+			
+			str[0] = "한"; /* str객체는 변경되지 않는다.*/
+			alert(str);
+		}
+
+		</script>
+	</head>
+	<body style="text-align:center">
+		<h1>string</h1>
+		<a href="javascript:f1()">호출</a>
+	</body>
+</html>

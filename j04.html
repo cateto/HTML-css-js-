@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<font color="orange" face="comic sans ms">
+		<title>j04</title>
+		<script>
+			function f1(){
+				alert("f1()");
+			}
+			function f2(i, j){ //파라미터를 가진 함수
+				alert("f1() i :" + i + "f1() j :" + j);
+				return i+j;
+			}
+			function f3(){ //리턴값을 주는 함수
+				var r = f2(100, 200);
+				alert("f3() r: " + r);
+			}
+			function f0(){ //파라미터 변수는 var이 안붙지만 지역변수이다.
+				alert("i: " + i);
+			}
+			var f4 = function(){
+				alert("f4()");
+			}
+		</script>
+
+	</head>
+	<body style="text-align:center">
+		<h1>Function</h1>
+		<a href= "javascript:f1()">f()</a></br>
+		<a href= "javascript:f2(10, 20)">f2()</a></br>
+		<a href= "javascript:f3()">f3()</a></br>
+		<a href= "javascript:f4()">f4()</a></br>
+	</body>
+</html>

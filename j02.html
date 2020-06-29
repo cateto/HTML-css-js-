@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html> <!-- var지역변수 -->
+	<head>
+		<meta charset="utf-8">
+		<title>j02</title>
+		<script>
+			function f(){
+				var i = 10;
+				var j = 2;
+				var k = i % ++j; // 산술 : + , - , *, **, /, %
+				document.getElementById("result").innerHTML = k;
+				var l = 2**3
+				alert("l: " + l);
+			}
+			function f1(){
+				var i = 10;
+				alert("f() i : " + i);
+			}
+			function f2(){
+				alert("f2() j : " + j);
+			}
+		</script>
+	</head>
+	<body style="text-align:center">
+		<h1 id="h1Id">Variables</h1>
+
+		<div id="result">
+		'i % ++j' 값은?
+		</div>
+
+		<a href="javascript:f()">변수 호출</a>
+		<a href="javascript:f2()">변수 호출</a>
+	</body>
+</html>
